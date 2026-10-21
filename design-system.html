@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore Meridian design tokens, accessible reusable components, typography, and light and dark appearances.">
+  <meta name="theme-color" content="#122d27">
+  <title>Design system · Meridian</title>
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <input class="drawer-toggle" type="checkbox" id="nav-toggle" aria-label="Open or close navigation">
+  <label class="drawer-backdrop" for="nav-toggle"><span class="sr-only">Close navigation</span></label>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Workspace sidebar">
+      <a class="brand" href="index.html" aria-label="Meridian home">
+        <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><g fill="currentColor"><path d="M14 1h4v10l7-7 3 3-7 7h10v4H21l7 7-3 3-7-7v10h-4V21l-7 7-3-3 7-7H1v-4h10L4 7l3-3 7 7z"/></g></svg>
+        meridian<span class="brand-dot">.</span>
+      </a>
+      <details class="workspace-switch">
+        <summary><span class="workspace-symbol">A</span><span><span class="workspace-name">Acme Studio</span><span class="workspace-plan">Pro workspace</span></span><svg class="icon chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="m8 9 4-4 4 4M8 15l4 4 4-4"/></svg></summary>
+        <p class="workspace-note">You’re viewing the Acme Studio demonstration workspace. All figures are sample business data.</p>
+      </details>
+      <p class="nav-label">Workspace</p>
+      <nav class="sidebar-nav" aria-label="Main navigation">
+        <a class="nav-link" href="index.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>Overview</a>
+        <a class="nav-link" href="analytics.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 3v17h17M8 15V9m5 6V5m5 10v-4"/></svg>Analytics</a>
+        <a class="nav-link" href="transactions.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 4h12m-4-3 4 3-4 3M16 20H4m4-3-4 3 4 3M4 9h16v6H4z"/></svg>Transactions<span class="nav-count">89</span></a>
+        <a class="nav-link" href="customers.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3"/><path d="M3 21v-3a6 6 0 0 1 12 0v3m1-16a3 3 0 0 1 0 6m3 10v-3a5 5 0 0 0-3-4"/></svg>Customers</a>
+      </nav>
+      <p class="nav-label">Manage</p>
+      <nav class="sidebar-nav" aria-label="Workspace management">
+        <a class="nav-link" href="settings.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 3-.7 2-2 .8-2.1-.4-2 3.4L3.7 10v2l-1.5 1.3 2 3.4 2.1-.4 2 .8.7 2h4l.7-2 2-.8 2.1.4 2-3.4-1.5-1.3v-2l1.5-1.2-2-3.4-2.1.4-2-.8-.7-2z"/><circle cx="11" cy="11" r="3"/></svg>Settings</a>
+        <a class="nav-link" href="design-system.html" aria-current="page"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 9 5-9 5-9-5 9-5Zm-9 9 9 5 9-5M3 16l9 5 9-5"/></svg>Design system<span class="nav-count">v1.0</span></a>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="plan-card"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.5 6 6.5 1-5 4.5 1.5 6.5-5.5-3.5L6.5 21 8 14.5 3 10l6.5-1z"/></svg><p class="plan-title">Room to grow.</p><p>A little more clarity.<br>A lot more possibility.</p><a href="settings.html#organization">Explore your workspace <span aria-hidden="true">↗</span></a></div>
+        <a class="nav-link" href="design-system.html#about"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 1 1 4 2c-1 .5-1.5 1-1.5 2M12 16h.01"/></svg>Help &amp; resources</a>
+        <div class="sidebar-footer"><span class="online-dot"></span>All systems operational <small>↗</small></div>
+      </div>
+    </aside>
+    <header class="app-header">
+      <div class="header-start">
+        <label class="mobile-menu" for="nav-toggle"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg><span class="sr-only">Toggle navigation</span></label>
+        <nav class="breadcrumb" aria-label="Breadcrumb"><a class="breadcrumb-workspace" href="index.html">Workspace</a><span class="separator" aria-hidden="true">/</span><span class="current" aria-current="page">Design system</span></nav>
+      </div>
+      <div class="header-actions">
+        <button class="search-shortcut" type="button" popovertarget="quick-nav"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4.5 4.5"/></svg>Quick navigation<kbd>↗</kbd></button>
+        <label class="theme-control" title="Switch appearance (this page only)"><input type="checkbox" id="theme-toggle" aria-label="Use dark appearance on this page"><svg class="icon theme-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.7 13A9 9 0 0 1 11 3.3 9 9 0 1 0 20.7 13Z"/></svg><svg class="icon theme-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg></label>
+        <button class="icon-button" type="button" popovertarget="notifications" aria-label="View sample notifications"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9M10 21h4"/></svg><span class="notification-dot"></span></button>
+        <span class="header-divider" aria-hidden="true"></span>
+        <details class="user-menu"><summary><span class="avatar">JL</span><span class="user-info"><span class="user-name">Jamie Lee</span><span class="user-role">Workspace admin</span></span><svg class="icon chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="m8 10 4 4 4-4"/></svg></summary><div class="dropdown-panel"><p>jamie@acme.studio</p><a href="settings.html#profile">Your profile <span class="push-end" aria-hidden="true">↗</span></a><a href="settings.html#appearance">Appearance <span class="push-end" aria-hidden="true">↗</span></a><a href="design-system.html#about">About this workspace</a></div></details>
+      </div>
+    </header>
+    <!-- PAGE CONTENT -->
+<main id="main-content" class="main-content" tabindex="-1">
+  <header class="page-heading">
+    <div><p class="eyebrow">THE MERIDIAN FOUNDATION</p><h1 class="page-title">Built with intention.</h1><p class="page-description">One thoughtful system. A thousand possibilities.</p></div>
+    <span class="badge badge-neutral">Design system · v1.0</span>
+  </header>
+
+  <section class="system-hero" aria-labelledby="system-brand-title">
+    <div><p class="eyebrow">CLARITY AT EVERY LEVEL</p><h2 id="system-brand-title">Good decisions start<br>with a clearer picture.</h2><p>Meridian brings a little calm to the business of running a business. Grounded colors, purposeful details, and room for the numbers to breathe.</p></div>
+    <svg class="system-hero-mark" viewBox="0 0 100 100" fill="none" aria-hidden="true"><path d="M50 5v90M5 50h90M18 18l64 64M18 82l64-64" stroke="currentColor" stroke-width="13"/><circle cx="50" cy="50" r="16" fill="#163d30"/><circle cx="50" cy="50" r="8" fill="currentColor"/></svg>
+  </section>
+
+  <nav class="system-nav" aria-label="Design system sections"><a href="#colors">Color</a><a href="#typography">Typography</a><a href="#spacing">Spacing</a><a href="#actions">Actions &amp; icons</a><a href="#forms">Forms</a><a href="#components">Components</a><a href="#feedback">Feedback</a><a href="#themes">Themes</a></nav>
+
+  <section class="system-section" id="colors" aria-labelledby="system-color-title">
+    <header><span>01</span><h2 id="system-color-title">A grounded palette</h2><p>Forest, stone, and a little fresh perspective.</p></header>
+    <div class="system-palette">
+      <article class="system-color"><div class="system-color-swatch system-swatch-forest">#1B5B47</div><div class="system-color-meta"><strong>Forest · Primary</strong><code>--brand</code></div></article>
+      <article class="system-color"><div class="system-color-swatch system-swatch-lime">#D7EF9A</div><div class="system-color-meta"><strong>Sprout · Accent</strong><code>--accent</code></div></article>
+      <article class="system-color"><div class="system-color-swatch system-swatch-stone">#F6F7F4</div><div class="system-color-meta"><strong>Stone · Canvas</strong><code>--bg</code></div></article>
+      <article class="system-color"><div class="system-color-swatch system-swatch-ink">#122D27</div><div class="system-color-meta"><strong>Evergreen · Navigation</strong><code>--sidebar-bg</code></div></article>
+      <article class="system-color"><div class="system-color-swatch system-swatch-success">SUCCESS</div><div class="system-color-meta"><strong>Positive outcomes</strong><code>--success</code></div></article>
+      <article class="system-color"><div class="system-color-swatch system-swatch-warning">ATTENTION</div><div class="system-color-meta"><strong>A useful heads-up</strong><code>--warning</code></div></article>
+      <article class="system-color"><div class="system-color-swatch system-swatch-danger">ERROR</div><div class="system-color-meta"><strong>Something to resolve</strong><code>--danger</code></div></article>
+      <article class="system-color"><div class="system-color-swatch system-swatch-info">INFORMATION</div><div class="system-color-meta"><strong>Helpful context</strong><code>--info</code></div></article>
+    </div>
+  </section>
+
+  <section class="system-section" id="typography" aria-labelledby="system-type-title">
+    <header><span>02</span><h2 id="system-type-title">Words with a clear hierarchy</h2><p>A system font stack. Fast, familiar, readable.</p></header>
+    <div class="card"><table class="system-type-table"><caption class="settings-sr-only">Meridian typography scale using Segoe UI and system sans-serif fallbacks</caption><tbody>
+      <tr><th scope="row">Display</th><td class="system-type-display">Clarity at every level.</td><td>40px / 1.1</td></tr>
+      <tr><th scope="row">Page heading</th><td class="system-type-heading">Your business, in focus.</td><td>24px / 1.3</td></tr>
+      <tr><th scope="row">Section title</th><td class="system-type-title">The details that matter</td><td>16px / 1.5</td></tr>
+      <tr><th scope="row">Body</th><td class="system-type-body">A clearer view helps your team move forward.</td><td>14px / 1.7</td></tr>
+      <tr><th scope="row">Caption</th><td class="system-type-caption">Compared with the previous reporting period.</td><td>12px / 1.5</td></tr>
+    </tbody></table></div>
+  </section>
+
+  <section class="system-section" id="spacing" aria-labelledby="system-spacing-title">
+    <header><span>03</span><h2 id="system-spacing-title">Space to think</h2><p>A 4px foundation, scaled with purpose.</p></header>
+    <div class="card system-spacing" aria-label="Spacing scale in pixels"><div class="system-spacing-item"><span class="system-space-4"></span><code>4</code></div><div class="system-spacing-item"><span class="system-space-8"></span><code>8</code></div><div class="system-spacing-item"><span class="system-space-12"></span><code>12</code></div><div class="system-spacing-item"><span class="system-space-16"></span><code>16</code></div><div class="system-spacing-item"><span class="system-space-24"></span><code>24</code></div><div class="system-spacing-item"><span class="system-space-32"></span><code>32</code></div><div class="system-spacing-item"><span class="system-space-48"></span><code>48</code></div></div>
+  </section>
+
+  <section class="system-section" id="actions" aria-labelledby="system-actions-title">
+    <header><span>04</span><h2 id="system-actions-title">Purposeful actions</h2><p>Clear affordances, consistent states.</p></header>
+    <div class="system-two-column">
+      <article class="card system-component"><h3>Buttons &amp; links</h3><p>Use a strong primary action, with quieter alternatives.</p><div class="system-example-row"><a class="button button-primary" href="settings.html">Primary action <span aria-hidden="true">↗</span></a><a class="button button-secondary" href="analytics.html">Secondary</a><a class="button button-ghost" href="transactions.html">Tertiary</a></div><div class="system-example-row"><button class="button button-primary" disabled>Disabled primary</button><button class="button button-secondary" disabled>Unavailable</button><a href="customers.html" class="section-link">Text link <span aria-hidden="true">→</span></a></div></article>
+      <article class="card system-component"><h3>A simple visual language</h3><p>Local inline SVG. Rounded strokes. No icon fonts to load.</p><div class="system-icon-gallery">
+        <figure><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg><figcaption>Overview</figcaption></figure>
+        <figure><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10m8 10V4m8 16v-7"/></svg><figcaption>Analytics</figcaption></figure>
+        <figure><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16m-4-4 4 4-4 4M20 17H4m4-4-4 4 4 4"/></svg><figcaption>Transactions</figcaption></figure>
+        <figure><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3"/><path d="M3 20v-2a6 6 0 0 1 12 0v2m1-15a3 3 0 0 1 0 6m3 9v-2a6 6 0 0 0-2-4"/></svg><figcaption>Customers</figcaption></figure>
+        <figure><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 12 3 3 5-6"/><circle cx="12" cy="12" r="9"/></svg><figcaption>Success</figcaption></figure>
+      </div></article>
+    </div>
+  </section>
+
+  <section class="system-section" id="forms" aria-labelledby="system-forms-title">
+    <header><span>05</span><h2 id="system-forms-title">Friendly forms</h2><p>Native controls. Visible labels. Useful guidance.</p></header>
+    <div class="system-two-column">
+      <article class="card system-component"><h3>Inputs &amp; selection</h3><p>Try submitting an empty or malformed email to see browser validation.</p><form action="#system-validated" method="get" class="system-demo-form"><div class="field"><label for="system-email">Work email <span aria-hidden="true">*</span></label><input class="input" type="email" id="system-email" placeholder="you@company.com" required aria-describedby="system-email-help"><small id="system-email-help">Required. This demonstration does not submit the email value.</small></div><div class="field"><label for="system-role">Workspace role</label><select class="select" id="system-role"><option>Administrator</option><option>Analyst</option><option>Viewer</option></select></div><fieldset><legend>Example preferences</legend><label><input type="checkbox" checked> Weekly digest</label><label><input type="checkbox"> Product news</label></fieldset><div class="system-example-row"><button class="button button-primary" type="submit">Validate example</button><button class="button button-secondary" type="reset">Reset</button></div><p class="system-form-message" id="system-validated" role="status">Browser validation passed. No email was submitted or saved.</p></form></article>
+      <article class="card system-component"><h3>States &amp; feedback</h3><p>Communicate meaning with words as well as color.</p><div class="system-demo-form"><div class="field"><label for="system-default">Default input</label><input class="input" id="system-default" placeholder="Enter a workspace name"></div><div class="field"><label for="system-invalid">Invalid state specimen</label><input class="input system-state-invalid" id="system-invalid" value="not-an-email" aria-invalid="true" aria-describedby="system-invalid-help"><span class="system-demo-error" id="system-invalid-help">Enter a complete email address, such as you@company.com.</span></div><div class="field"><label for="system-disabled">Disabled field</label><input class="input" id="system-disabled" value="Managed by your organization" disabled><small>A disabled field is unavailable and excluded from keyboard navigation.</small></div><div class="system-example-row"><span class="badge badge-success">✓ Active</span><span class="badge badge-warning">◷ Pending</span><span class="badge badge-neutral">Archived</span><span class="badge badge-info">Information</span></div></div></article>
+    </div>
+  </section>
+
+  <section class="system-section" id="components" aria-labelledby="system-components-title">
+    <header><span>06</span><h2 id="system-components-title">The building blocks</h2><p>Reusable pieces, designed to work together.</p></header>
+    <div class="system-two-column">
+      <article class="card system-component"><h3>Cards &amp; loading specimens</h3><p>A calm surface gives each piece of information a home.</p><div class="system-demo-metric"><p>Monthly revenue</p><strong>$128,430<span class="settings-sr-only"> US dollars</span></strong><span>↗ 13.0% compared with May</span></div><div class="system-skeleton" aria-hidden="true"><span></span><div><i></i><i></i></div></div><p class="system-skeleton-label">Static skeleton specimen · no content is loading.</p></article>
+      <article class="card system-component system-tab-demo"><h3>Presentation tabs</h3><p>Native radio controls switch between two real content panels.</p><div class="system-preview-tabs" role="group" aria-label="Component preview panels"><label><input type="radio" id="system-tab-overview" name="system-tabs" checked>Overview</label><label><input type="radio" id="system-tab-details" name="system-tabs">Details</label></div><div class="system-tab-content system-tab-overview"><h4>A consistent foundation</h4><p>Every page shares the same semantic colors, spacing scale, focus treatment, and component language. Change a token once; carry that decision throughout the experience.</p></div><div class="system-tab-content system-tab-details"><dl><dt>Technology</dt><dd>HTML5 &amp; CSS3</dd><dt>Dependencies</dt><dd>None</dd><dt>Spacing foundation</dt><dd>4 pixels</dd><dt>Theme persistence</dt><dd>Current page only</dd></dl></div></article>
+      <article class="card system-component"><h3>Progress &amp; measurements</h3><p>Native elements make quantitative status understandable.</p><div class="system-progress-example"><label for="system-progress">Quarterly revenue goal <strong>72%</strong></label><progress id="system-progress" value="72" max="100">72%</progress><small>$216,000 of a $300,000 example goal.</small></div><div class="system-progress-example"><label for="system-meter">Team seat usage <strong>24 / 30</strong></label><meter id="system-meter" min="0" max="30" low="10" high="26" optimum="15" value="24">24 of 30 seats</meter><small>6 seats available on the Pro workspace plan.</small></div></article>
+      <article class="card system-component"><h3>Avatars &amp; account status</h3><p>Initials are lightweight, readable, and always available offline.</p><div class="system-example-row"><span class="avatar" aria-label="Jamie Lee">JL</span><span class="avatar avatar-blue" aria-label="Olivia Rhye">OR</span><span class="avatar avatar-peach" aria-label="Phoenix Baker">PB</span><span class="avatar avatar-lilac" aria-label="Lana Steiner">LS</span></div><div class="system-example-row"><span class="badge badge-success">● Completed</span><span class="badge badge-warning">◷ Pending</span><span class="badge badge-neutral">○ Inactive</span></div><details class="system-disclosure"><summary>Why we use initials</summary><p>Names and initials carry account identity without remote portrait requests. A photographic avatar can be added later with a descriptive alternative and fixed dimensions.</p></details></article>
+    </div>
+    <div class="card table-wrap system-table-specimen"><table class="data-table"><caption class="settings-sr-only">Example table component with two recent customer payments</caption><thead><tr><th scope="col">Customer</th><th scope="col">Transaction</th><th scope="col">Amount</th><th scope="col">Status</th><th scope="col">Date</th></tr></thead><tbody><tr><th scope="row">Olivia Rhye</th><td>#MRD-1042</td><td>$2,400.00</td><td><span class="badge badge-success">Completed</span></td><td><time datetime="2026-06-30">Jun 30, 2026</time></td></tr><tr><th scope="row">Lana Steiner</th><td>#MRD-1040</td><td>$980.00</td><td><span class="badge badge-warning">Pending</span></td><td><time datetime="2026-06-29">Jun 29, 2026</time></td></tr></tbody></table></div>
+  </section>
+
+  <section class="system-section" id="feedback" aria-labelledby="system-feedback-title">
+    <header><span>07</span><h2 id="system-feedback-title">Feedback with context</h2><p>A helpful next step, never a dead end.</p></header>
+    <div class="system-two-column">
+      <article class="card system-component"><h3>Alerts</h3><p>Static state specimens with plain-language explanations.</p><div class="system-example-stack"><div class="system-alert system-alert-success"><strong>✓ All set.</strong>Your workspace details are ready to review.</div><div class="system-alert system-alert-warning"><strong>◷ A little attention needed.</strong>89 transactions are awaiting confirmation in this reporting period.</div><div class="system-alert system-alert-error"><strong>! Payment unsuccessful.</strong>Review the payment method before trying again in a connected application.</div></div></article>
+      <article class="card system-component"><h3>Native popovers &amp; disclosures</h3><p>Context when you need it, without a JavaScript dependency.</p><button class="button button-secondary" type="button" popovertarget="system-popover">Open component note <span aria-hidden="true">↗</span></button><div id="system-popover" popover class="system-popover"><h3>A little extra context</h3><p>This is an HTML popover. Press Escape, click outside, or use the button below to close it. Supporting browsers manage its focus and dismissal.</p><button class="button button-primary" type="button" popovertarget="system-popover" popovertargetaction="hide">Got it</button></div><details class="system-disclosure"><summary>Read the same component note</summary><p>Popovers offer extra context without leaving the page. This disclosure provides the same information in browsers that do not support the Popover API.</p></details><p class="system-footnote">Native tooltip example: <abbr title="Average order value">AOV</abbr>. The visible expansion is <strong>average order value</strong>.</p></article>
+    </div>
+  </section>
+
+  <section class="system-section" id="themes" aria-labelledby="system-themes-title">
+    <header><span>08</span><h2 id="system-themes-title">Two considered appearances</h2><p>Semantic tokens keep every surface in harmony.</p></header>
+    <div class="system-appearance-pair"><article class="system-appearance"><span class="eyebrow">LIGHT APPEARANCE</span><strong>A clear outlook.</strong><p>Warm stone surfaces, forest-green actions, and readable ink. A little room to breathe.</p><div class="system-appearance-line" aria-hidden="true"></div></article><article class="system-appearance system-appearance-dark"><span class="eyebrow">DARK APPEARANCE</span><strong>A quieter focus.</strong><p>Deep green surfaces, soft neutral text, and fresh lime accents. Designed for the same clarity.</p><div class="system-appearance-line" aria-hidden="true"></div></article></div>
+    <p class="system-footnote">Use the application header’s appearance switch to try the full theme. The current page responds through CSS <code>:has()</code>; the selection resets on navigation or reload. In browsers without <code>:has()</code>, the readable light appearance remains available.</p>
+  </section>
+
+  <section class="system-section" id="about" aria-labelledby="system-about-title">
+    <header><span>09</span><h2 id="system-about-title">About this workspace</h2><p>A complete, thoughtfully bounded demonstration.</p></header>
+    <div class="card system-component"><h3>A little context before you explore</h3><p>Meridian is a fictional revenue operations workspace for Acme Studio. Its reporting snapshot covers June 2026. All customers, payments, and activity are sample records.</p><div class="system-two-column"><div class="system-tab-content"><h4>Explore with confidence</h4><p>Navigation, disclosures, native popovers, form validation, and in-page appearance controls work in your browser. Transaction status views show different selections of the supplied sample records.</p></div><div class="system-tab-content"><h4>A static portfolio project</h4><p>No payments are processed, messages delivered, or account changes saved. Reports do not update live. Appearance and presentation choices apply to the current page.</p></div></div><div class="system-example-row"><a class="button button-primary" href="index.html">Back to overview <span aria-hidden="true">↗</span></a><a class="button button-secondary" href="settings.html">Explore settings</a></div></div>
+  </section>
+</main>
+
+    <!-- END PAGE CONTENT -->
+  </div>
+  <div id="quick-nav" popover><div class="popover-heading"><h2>Find your way</h2><button class="icon-button" type="button" popovertarget="quick-nav" popovertargetaction="hide" aria-label="Close navigation">×</button></div><nav class="quick-links" aria-label="Quick navigation"><a href="index.html">Business overview <span aria-hidden="true">↗</span></a><a href="analytics.html">Analytics &amp; insights <span aria-hidden="true">↗</span></a><a href="transactions.html">Transaction records <span aria-hidden="true">↗</span></a><a href="customers.html">Customer directory <span aria-hidden="true">↗</span></a><a href="settings.html">Workspace settings <span aria-hidden="true">↗</span></a></nav></div>
+  <div id="notifications" popover><div class="popover-heading"><h2>Workspace updates</h2><button class="icon-button" type="button" popovertarget="notifications" popovertargetaction="hide" aria-label="Close updates">×</button></div><p class="eyebrow">SAMPLE ACTIVITY · JUNE 30, 2026</p><div class="stack"><article class="alert"><span aria-hidden="true">↗</span><div><strong>Your June report is ready</strong><p>Revenue reached $128,430, up 13% from May.</p><a class="section-link" href="analytics.html">Explore the numbers ↗</a></div></article><article class="alert"><span aria-hidden="true">♧</span><div><strong>64 net new active customers</strong><p>Your active customer base is now 842.</p><a class="section-link" href="customers.html">View customer directory ↗</a></div></article><p class="popover-copy">A curated snapshot of this demonstration workspace. Updates are not retrieved live.</p></div></div>
+</body>
+</html>

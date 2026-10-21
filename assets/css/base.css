@@ -1,0 +1,37 @@
+@layer reset {
+  *, *::before, *::after { box-sizing: border-box; }
+  body, h1, h2, h3, h4, p, figure, fieldset { margin: 0; }
+  button, input, select, textarea { font: inherit; }
+  button, summary, label[for] { -webkit-tap-highlight-color: transparent; }
+  img, svg { vertical-align: middle; }
+  img { max-inline-size: 100%; }
+  button, input { margin: 0; }
+  fieldset { min-inline-size: 0; }
+}
+@layer base {
+  html { scroll-behavior: smooth; scroll-padding-block-start: 6rem; }
+  body { min-inline-size: 320px; background: var(--bg); color: var(--text); font: var(--text-base)/var(--leading-normal) var(--font-sans); -webkit-font-smoothing: antialiased; }
+  h1, h2, h3, h4 { line-height: var(--leading-tight); font-weight: var(--weight-semibold); }
+  h1 { letter-spacing: var(--tracking-tight); }
+  a { color: inherit; text-decoration: none; }
+  button, summary { cursor: pointer; }
+  button { color: inherit; }
+  summary { list-style: none; }
+  summary::-webkit-details-marker { display: none; }
+  button:disabled, input:disabled, select:disabled { cursor: not-allowed; opacity: .5; }
+  :where(a, button, input, select, textarea, summary, [tabindex]):focus-visible { outline: 2px solid var(--brand); outline-offset: 4px; box-shadow: var(--focus-ring); }
+  :where(input, select, textarea) { accent-color: var(--brand); }
+  ::selection { background: var(--accent); color: #173427; }
+  time, .numeric { font-variant-numeric: tabular-nums; }
+  :where(p, figcaption) { text-wrap: pretty; }
+  :where(code) { font-family: var(--font-mono); font-size: .9em; }
+  [popover] { color: var(--text); background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: var(--space-6); max-inline-size: min(440px, calc(100vw - 2rem)); box-shadow: var(--shadow-popover); }
+  [popover]::backdrop { background: #122d2735; backdrop-filter: blur(2px); }
+  [popover]:popover-open { animation: popover-enter var(--duration-normal) ease-out; }
+  @keyframes popover-enter { from { opacity: 0; translate: 0 5px; } to { opacity: 1; translate: 0 0; } }
+  @supports not selector(:has(*)) { .theme-control { display: none; } }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+  }
+}

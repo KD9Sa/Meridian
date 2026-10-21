@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 48" width="720" height="48" role="img" aria-labelledby="palette-title palette-description">
+  <title id="palette-title">Meridian color palette</title>
+  <desc id="palette-description">Forest primary #1B5B47, evergreen navigation #122D27, lime accent #D7EF9A, stone canvas #F6F7F4, white surface #FFFFFF, and ink text #202B27.</desc>
+  <g stroke="#cbd2c7" stroke-width="1">
+    <rect x=".5" y=".5" width="111" height="47" rx="7" fill="#1b5b47"/>
+    <rect x="122.5" y=".5" width="111" height="47" rx="7" fill="#122d27"/>
+    <rect x="244.5" y=".5" width="111" height="47" rx="7" fill="#d7ef9a"/>
+    <rect x="366.5" y=".5" width="111" height="47" rx="7" fill="#f6f7f4"/>
+    <rect x="488.5" y=".5" width="111" height="47" rx="7" fill="#ffffff"/>
+    <rect x="610.5" y=".5" width="109" height="47" rx="7" fill="#202b27"/>
+  </g>
+</svg>

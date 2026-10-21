@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore Meridian revenue trends, acquisition channels, conversion, and monthly business performance.">
+  <meta name="theme-color" content="#122d27">
+  <title>Analytics · Meridian</title>
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <input class="drawer-toggle" type="checkbox" id="nav-toggle" aria-label="Open or close navigation">
+  <label class="drawer-backdrop" for="nav-toggle"><span class="sr-only">Close navigation</span></label>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Workspace sidebar">
+      <a class="brand" href="index.html" aria-label="Meridian home">
+        <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><g fill="currentColor"><path d="M14 1h4v10l7-7 3 3-7 7h10v4H21l7 7-3 3-7-7v10h-4V21l-7 7-3-3 7-7H1v-4h10L4 7l3-3 7 7z"/></g></svg>
+        meridian<span class="brand-dot">.</span>
+      </a>
+      <details class="workspace-switch">
+        <summary><span class="workspace-symbol">A</span><span><span class="workspace-name">Acme Studio</span><span class="workspace-plan">Pro workspace</span></span><svg class="icon chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="m8 9 4-4 4 4M8 15l4 4 4-4"/></svg></summary>
+        <p class="workspace-note">You’re viewing the Acme Studio demonstration workspace. All figures are sample business data.</p>
+      </details>
+      <p class="nav-label">Workspace</p>
+      <nav class="sidebar-nav" aria-label="Main navigation">
+        <a class="nav-link" href="index.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>Overview</a>
+        <a class="nav-link" href="analytics.html" aria-current="page"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 3v17h17M8 15V9m5 6V5m5 10v-4"/></svg>Analytics</a>
+        <a class="nav-link" href="transactions.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 4h12m-4-3 4 3-4 3M16 20H4m4-3-4 3 4 3M4 9h16v6H4z"/></svg>Transactions<span class="nav-count">89</span></a>
+        <a class="nav-link" href="customers.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3"/><path d="M3 21v-3a6 6 0 0 1 12 0v3m1-16a3 3 0 0 1 0 6m3 10v-3a5 5 0 0 0-3-4"/></svg>Customers</a>
+      </nav>
+      <p class="nav-label">Manage</p>
+      <nav class="sidebar-nav" aria-label="Workspace management">
+        <a class="nav-link" href="settings.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 3-.7 2-2 .8-2.1-.4-2 3.4L3.7 10v2l-1.5 1.3 2 3.4 2.1-.4 2 .8.7 2h4l.7-2 2-.8 2.1.4 2-3.4-1.5-1.3v-2l1.5-1.2-2-3.4-2.1.4-2-.8-.7-2z"/><circle cx="11" cy="11" r="3"/></svg>Settings</a>
+        <a class="nav-link" href="design-system.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 9 5-9 5-9-5 9-5Zm-9 9 9 5 9-5M3 16l9 5 9-5"/></svg>Design system<span class="nav-count">v1.0</span></a>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="plan-card"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.5 6 6.5 1-5 4.5 1.5 6.5-5.5-3.5L6.5 21 8 14.5 3 10l6.5-1z"/></svg><p class="plan-title">Room to grow.</p><p>A little more clarity.<br>A lot more possibility.</p><a href="settings.html#organization">Explore your workspace <span aria-hidden="true">↗</span></a></div>
+        <a class="nav-link" href="design-system.html#about"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 1 1 4 2c-1 .5-1.5 1-1.5 2M12 16h.01"/></svg>Help &amp; resources</a>
+        <div class="sidebar-footer"><span class="online-dot"></span>All systems operational <small>↗</small></div>
+      </div>
+    </aside>
+    <header class="app-header">
+      <div class="header-start">
+        <label class="mobile-menu" for="nav-toggle"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg><span class="sr-only">Toggle navigation</span></label>
+        <nav class="breadcrumb" aria-label="Breadcrumb"><a class="breadcrumb-workspace" href="index.html">Workspace</a><span class="separator" aria-hidden="true">/</span><span class="current" aria-current="page">Analytics</span></nav>
+      </div>
+      <div class="header-actions">
+        <button class="search-shortcut" type="button" popovertarget="quick-nav"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4.5 4.5"/></svg>Quick navigation<kbd>↗</kbd></button>
+        <label class="theme-control" title="Switch appearance (this page only)"><input type="checkbox" id="theme-toggle" aria-label="Use dark appearance on this page"><svg class="icon theme-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.7 13A9 9 0 0 1 11 3.3 9 9 0 1 0 20.7 13Z"/></svg><svg class="icon theme-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg></label>
+        <button class="icon-button" type="button" popovertarget="notifications" aria-label="View sample notifications"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9M10 21h4"/></svg><span class="notification-dot"></span></button>
+        <span class="header-divider" aria-hidden="true"></span>
+        <details class="user-menu"><summary><span class="avatar">JL</span><span class="user-info"><span class="user-name">Jamie Lee</span><span class="user-role">Workspace admin</span></span><svg class="icon chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="m8 10 4 4 4-4"/></svg></summary><div class="dropdown-panel"><p>jamie@acme.studio</p><a href="settings.html#profile">Your profile <span class="push-end" aria-hidden="true">↗</span></a><a href="settings.html#appearance">Appearance <span class="push-end" aria-hidden="true">↗</span></a><a href="design-system.html#about">About this workspace</a></div></details>
+      </div>
+    </header>
+    <!-- PAGE CONTENT -->
+<main id="main-content" class="main-content" tabindex="-1">
+  <div class="page-heading">
+    <div>
+      <p class="eyebrow">Your business, in perspective</p>
+      <h1 class="page-title">Analytics</h1>
+      <p class="page-description">A closer look at what’s moving your business forward.</p>
+    </div>
+    <div class="cluster">
+      <span class="insight-date"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M7 3v4m10-4v4M3 11h18"/></svg>Jun 1 – Jun 30, 2026</span>
+      <a class="button button-secondary" href="#report-data">Explore report <span aria-hidden="true">↗</span></a>
+    </div>
+  </div>
+
+  <section class="insight-intro" aria-labelledby="insight-intro-title">
+    <div>
+      <span class="insight-overline">THE JUNE PICTURE</span>
+      <h2 id="insight-intro-title">Healthy growth.<br>A stronger foundation.</h2>
+      <p>Revenue grew for the third consecutive month. Direct relationships remain your strongest channel, contributing half of June’s revenue.</p>
+      <div class="insight-summary-tag"><span class="insight-live-dot" aria-hidden="true"></span>June report · Closed period</div>
+    </div>
+    <div class="insight-headline-metric">
+      <span>Total revenue</span>
+      <strong>$128,430<span>.00</span></strong>
+      <p><span class="insight-gain">↗ 13.0%</span> <span>vs. $113,655 in May</span></p>
+      <div class="insight-mini-comparison" aria-label="June revenue 128,430 dollars compared with May revenue 113,655 dollars">
+        <div><span>June</span><span class="insight-comparison-track"><span class="insight-comparison-current"></span></span><b>$128.4k</b></div>
+        <div><span>May</span><span class="insight-comparison-track"><span class="insight-comparison-previous"></span></span><b>$113.7k</b></div>
+      </div>
+    </div>
+    <dl class="insight-side-metrics">
+      <div><dt>Transactions</dt><dd>1,482 <span>↗ 15.6%</span></dd></div>
+      <div><dt>Active customers</dt><dd>842 <span>↗ 8.2%</span></dd></div>
+      <div><dt>Revenue / transaction</dt><dd>$86.66 <span class="insight-negative">↘ 2.3%</span></dd></div>
+    </dl>
+  </section>
+
+  <section class="card insight-trend-card" aria-labelledby="revenue-trend-title">
+    <input class="insight-radio" type="radio" id="insight-monthly" name="insight-period" checked>
+    <input class="insight-radio" type="radio" id="insight-quarterly" name="insight-period">
+    <div class="card-header">
+      <div><h2 class="card-title" id="revenue-trend-title">Revenue trajectory</h2><p class="card-description">A little perspective on your progress.</p></div>
+      <fieldset class="insight-period-control"><legend class="insight-visually-hidden">Chart reporting interval</legend><label for="insight-monthly">Monthly</label><label for="insight-quarterly">Quarterly</label></fieldset>
+    </div>
+    <div class="insight-chart-meta"><span><i class="insight-legend-dot" aria-hidden="true"></i> Revenue in USD</span><span class="insight-monthly">Jan – Jun 2026</span><span class="insight-quarterly">Q1 – Q2 2026</span></div>
+    <figure class="insight-monthly insight-line-figure">
+      <svg class="insight-line-chart" viewBox="0 0 1000 285" role="img" aria-labelledby="monthly-chart-title monthly-chart-desc">
+        <title id="monthly-chart-title">Monthly revenue, January to June 2026</title>
+        <desc id="monthly-chart-desc">Revenue was $82,400 in January, $89,300 in February, $87,100 in March, $105,200 in April, $113,655 in May and $128,430 in June. June was 55.9 percent higher than January.</desc>
+        <defs><linearGradient id="insight-revenue-fill" x1="0" x2="0" y1="0" y2="1"><stop offset="0%" stop-color="#8cbba0" stop-opacity=".3"/><stop offset="100%" stop-color="#8cbba0" stop-opacity="0"/></linearGradient></defs>
+        <g class="insight-chart-grid"><path d="M64 30H962M64 82H962M64 134H962M64 186H962M64 238H962"/></g>
+        <g class="insight-axis"><text x="4" y="34">$140k</text><text x="4" y="86">$105k</text><text x="12" y="138">$70k</text><text x="12" y="190">$35k</text><text x="27" y="242">$0</text><text x="64" y="274">Jan</text><text x="238" y="274">Feb</text><text x="416" y="274">Mar</text><text x="594" y="274">Apr</text><text x="773" y="274">May</text><text x="944" y="274">Jun</text></g>
+        <path d="M78 115.58C166 115.58 166 105.33 254 105.33C343 105.33 343 108.59 432 108.59C521 108.59 521 81.70 610 81.70C699 81.70 699 69.14 788 69.14C869 69.14 869 47.19 950 47.19V238H78Z" fill="url(#insight-revenue-fill)"/>
+        <path class="insight-revenue-line" d="M78 115.58C166 115.58 166 105.33 254 105.33C343 105.33 343 108.59 432 108.59C521 108.59 521 81.70 610 81.70C699 81.70 699 69.14 788 69.14C869 69.14 869 47.19 950 47.19"/>
+        <path class="insight-chart-marker" d="M950 47.19V238"/>
+        <g class="insight-point"><circle cx="78" cy="115.58" r="4"/><circle cx="254" cy="105.33" r="4"/><circle cx="432" cy="108.59" r="4"/><circle cx="610" cy="81.70" r="4"/><circle cx="788" cy="69.14" r="4"/><circle cx="950" cy="47.19" r="6"/></g>
+        <g class="insight-svg-label"><rect x="828" y="6" width="104" height="32" rx="8"/><text x="880" y="27" text-anchor="middle">$128,430</text></g>
+      </svg>
+      <ol class="insight-mobile-trend" aria-label="Monthly revenue in USD">
+        <li><div><span>January</span><strong>$82,400</strong></div><meter min="0" max="140000" value="82400" aria-label="January revenue: 82,400 dollars">$82,400</meter></li>
+        <li><div><span>February</span><strong>$89,300</strong></div><meter min="0" max="140000" value="89300" aria-label="February revenue: 89,300 dollars">$89,300</meter></li>
+        <li><div><span>March</span><strong>$87,100</strong></div><meter min="0" max="140000" value="87100" aria-label="March revenue: 87,100 dollars">$87,100</meter></li>
+        <li><div><span>April</span><strong>$105,200</strong></div><meter min="0" max="140000" value="105200" aria-label="April revenue: 105,200 dollars">$105,200</meter></li>
+        <li><div><span>May</span><strong>$113,655</strong></div><meter min="0" max="140000" value="113655" aria-label="May revenue: 113,655 dollars">$113,655</meter></li>
+        <li><div><span>June</span><strong>$128,430</strong></div><meter min="0" max="140000" value="128430" aria-label="June revenue: 128,430 dollars">$128,430</meter></li>
+      </ol>
+      <figcaption><span>Six-month revenue <strong>$606,085</strong></span><span><span class="insight-positive">↗ 55.9%</span> since January</span></figcaption>
+    </figure>
+    <figure class="insight-quarterly insight-quarter-figure">
+      <div class="insight-quarter-chart" role="img" aria-label="First quarter revenue 258,800 dollars. Second quarter revenue 347,285 dollars, an increase of 34.2 percent.">
+        <div class="insight-quarter-column"><strong>$258,800</strong><span class="insight-quarter-bar insight-quarter-one"></span><span>Q1 2026</span><small>Jan · Feb · Mar</small></div>
+        <div class="insight-quarter-column"><strong>$347,285 <em>+34.2%</em></strong><span class="insight-quarter-bar insight-quarter-two"></span><span>Q2 2026</span><small>Apr · May · Jun</small></div>
+      </div>
+      <figcaption><span>First-half revenue <strong>$606,085</strong></span><span><span class="insight-positive">↗ $88,485</span> quarter over quarter</span></figcaption>
+    </figure>
+  </section>
+
+  <div class="insight-detail-grid">
+    <section class="card" aria-labelledby="source-title">
+      <div class="card-header"><div><h2 class="card-title" id="source-title">Where growth comes from</h2><p class="card-description">June revenue by acquisition source</p></div><span class="insight-small-icon" aria-hidden="true">↗</span></div>
+      <div class="insight-source-body">
+        <div class="insight-source-total"><strong>$128,430</strong><span>across 4 channels</span></div>
+        <div class="insight-stacked-bar" role="img" aria-label="Direct 50 percent; organic 30 percent; referral 15 percent; email 5 percent"><span class="insight-source-direct"></span><span class="insight-source-organic"></span><span class="insight-source-referral"></span><span class="insight-source-email"></span></div>
+        <table class="insight-source-table"><caption class="insight-visually-hidden">Revenue by acquisition channel for June 2026</caption><thead><tr><th scope="col">Channel</th><th scope="col">Revenue</th><th scope="col">Share</th></tr></thead><tbody>
+          <tr><th scope="row"><i class="insight-channel-dot insight-source-direct" aria-hidden="true"></i>Direct</th><td>$64,215</td><td>50%</td></tr>
+          <tr><th scope="row"><i class="insight-channel-dot insight-source-organic" aria-hidden="true"></i>Organic search</th><td>$38,529</td><td>30%</td></tr>
+          <tr><th scope="row"><i class="insight-channel-dot insight-source-referral" aria-hidden="true"></i>Referral</th><td>$19,264</td><td>15%</td></tr>
+          <tr><th scope="row"><i class="insight-channel-dot insight-source-email" aria-hidden="true"></i>Email</th><td>$6,422</td><td>5%</td></tr>
+        </tbody></table>
+        <p class="insight-note">Direct and organic account for <strong>80%</strong> of revenue. Keep investing in the relationships you already own.</p>
+      </div>
+    </section>
+
+    <section class="card" aria-labelledby="funnel-title">
+      <div class="card-header"><div><h2 class="card-title" id="funnel-title">From visit to value</h2><p class="card-description">June purchase funnel · unique sessions</p></div><span class="badge badge-success">5.47% conversion</span></div>
+      <ol class="insight-funnel">
+        <li><div><span><b>01</b> Website visits</span><strong>24,800</strong></div><div class="insight-funnel-track"><span class="insight-funnel-visits"></span></div><small>Your starting audience</small></li>
+        <li><div><span><b>02</b> Product engagement</span><strong>6,200</strong></div><div class="insight-funnel-track"><span class="insight-funnel-engaged"></span></div><small>25.0% of visitors</small></li>
+        <li><div><span><b>03</b> Checkout sessions</span><strong>1,984</strong></div><div class="insight-funnel-track"><span class="insight-funnel-checkout"></span></div><small>32.0% of engaged sessions</small></li>
+        <li><div><span><b>04</b> Completed payments</span><strong>1,356</strong></div><div class="insight-funnel-track"><span class="insight-funnel-completed"></span></div><small>68.3% of checkout sessions</small></li>
+      </ol>
+      <p class="insight-funnel-note">Bars share a common scale of 24,800 sessions.</p>
+    </section>
+
+    <section class="card" aria-labelledby="payment-quality-title">
+      <div class="card-header"><div><h2 class="card-title" id="payment-quality-title">Payment health</h2><p class="card-description">Every transaction, accounted for</p></div></div>
+      <figure class="insight-quality-figure">
+        <div class="insight-quality-donut" role="img" aria-label="1,482 transactions: 1,356 completed (91.5 percent), 89 pending (6 percent), and 37 failed (2.5 percent)."><div><strong>91.5<span>%</span></strong><span>completion rate</span></div></div>
+        <figcaption class="insight-quality-legend"><span><i class="insight-channel-dot insight-source-direct" aria-hidden="true"></i>Completed <strong>1,356</strong></span><span><i class="insight-channel-dot insight-dot-pending" aria-hidden="true"></i>Pending <strong>89</strong></span><span><i class="insight-channel-dot insight-dot-failed" aria-hidden="true"></i>Failed <strong>37</strong></span></figcaption>
+      </figure>
+      <a class="insight-card-link" href="transactions.html">Review transactions <span aria-hidden="true">↗</span></a>
+    </section>
+  </div>
+
+  <section class="card insight-report" id="report-data" aria-labelledby="period-comparison-title">
+    <div class="card-header"><div><h2 class="card-title" id="period-comparison-title">The numbers behind the story</h2><p class="card-description">Month-over-month performance · May and June 2026</p></div><span class="badge badge-neutral">Closed reporting periods</span></div>
+    <div class="table-wrap" role="region" aria-label="Monthly performance comparison" tabindex="0"><table class="data-table insight-comparison-table"><caption class="insight-visually-hidden">Comparison of May and June 2026 business performance</caption><thead><tr><th scope="col">Business metric</th><th scope="col">May 2026</th><th scope="col">June 2026</th><th scope="col">Change</th><th scope="col">Reading</th></tr></thead><tbody>
+      <tr><th scope="row">Revenue</th><td>$113,655</td><td><strong>$128,430</strong></td><td><span class="insight-positive">↗ 13.0%</span></td><td class="text-muted">+$14,775 in captured revenue</td></tr>
+      <tr><th scope="row">Transactions</th><td>1,282</td><td><strong>1,482</strong></td><td><span class="insight-positive">↗ 15.6%</span></td><td class="text-muted">200 more initiated transactions</td></tr>
+      <tr><th scope="row">Active customers</th><td>778</td><td><strong>842</strong></td><td><span class="insight-positive">↗ 8.2%</span></td><td class="text-muted">64 more active accounts</td></tr>
+      <tr><th scope="row">Revenue per transaction</th><td>$88.65</td><td><strong>$86.66</strong></td><td><span class="insight-negative">↘ 2.3%</span></td><td class="text-muted">More transactions at a lower average</td></tr>
+    </tbody></table></div>
+    <details class="insight-methodology"><summary>How to read this report <span aria-hidden="true">+</span></summary><div><p><strong>A consistent snapshot.</strong> This demonstration uses a fixed June 2026 dataset for Acme Studio, with all amounts in USD. Revenue includes captured payments. Transaction counts include completed, pending and failed attempts; revenue per transaction is captured revenue divided by all initiated transactions.</p><p><strong>Rounded for readability.</strong> Percentage changes are calculated from source values and rounded. The May average is $88.65 before presentation rounding; the June decrease is approximately 2.3%. Channel shares are rounded, with dollar values balanced to the $128,430 total. Funnel data uses unique sessions and is a separate cohort from transaction attempts.</p><p><strong>Monthly chart data.</strong> January $82,400; February $89,300; March $87,100; April $105,200; May $113,655; June $128,430. Q1 totals $258,800 and Q2 totals $347,285. Interval controls change the chart presentation locally; this report does not retrieve live data.</p></div></details>
+  </section>
+
+  <footer class="insight-report-footer"><p><span class="insight-live-dot" aria-hidden="true"></span>All amounts in USD · Static June 2026 reporting snapshot</p><a class="section-link" href="design-system.html">Built with the Meridian design system <span aria-hidden="true">↗</span></a></footer>
+</main>
+
+    <!-- END PAGE CONTENT -->
+  </div>
+  <div id="quick-nav" popover><div class="popover-heading"><h2>Find your way</h2><button class="icon-button" type="button" popovertarget="quick-nav" popovertargetaction="hide" aria-label="Close navigation">×</button></div><nav class="quick-links" aria-label="Quick navigation"><a href="index.html">Business overview <span aria-hidden="true">↗</span></a><a href="analytics.html">Analytics &amp; insights <span aria-hidden="true">↗</span></a><a href="transactions.html">Transaction records <span aria-hidden="true">↗</span></a><a href="customers.html">Customer directory <span aria-hidden="true">↗</span></a><a href="settings.html">Workspace settings <span aria-hidden="true">↗</span></a></nav></div>
+  <div id="notifications" popover><div class="popover-heading"><h2>Workspace updates</h2><button class="icon-button" type="button" popovertarget="notifications" popovertargetaction="hide" aria-label="Close updates">×</button></div><p class="eyebrow">SAMPLE ACTIVITY · JUNE 30, 2026</p><div class="stack"><article class="alert"><span aria-hidden="true">↗</span><div><strong>Your June report is ready</strong><p>Revenue reached $128,430, up 13% from May.</p><a class="section-link" href="analytics.html">Explore the numbers ↗</a></div></article><article class="alert"><span aria-hidden="true">♧</span><div><strong>64 net new active customers</strong><p>Your active customer base is now 842.</p><a class="section-link" href="customers.html">View customer directory ↗</a></div></article><p class="popover-copy">A curated snapshot of this demonstration workspace. Updates are not retrieved live.</p></div></div>
+</body>
+</html>

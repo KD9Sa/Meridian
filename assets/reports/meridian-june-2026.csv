@@ -1,0 +1,12 @@
+Metric,May 2026,June 2026,Unit
+Completed revenue,113655,128430,USD
+Transactions,1282,1482,count
+Active customers,778,842,count
+Revenue per transaction,88.65,86.66,USD
+Completed transactions,,1356,count
+Pending transactions,,89,count
+Failed transactions,,37,count
+Pending amount,,7210,USD
+Failed amount,,2880,USD
+Revenue goal,,150000,USD
+Active customer goal,,900,count

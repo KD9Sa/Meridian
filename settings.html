@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Manage demonstration profile, organization, appearance, privacy, and notification preferences in Meridian.">
+  <meta name="theme-color" content="#122d27">
+  <title>Settings · Meridian</title>
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <input class="drawer-toggle" type="checkbox" id="nav-toggle" aria-label="Open or close navigation">
+  <label class="drawer-backdrop" for="nav-toggle"><span class="sr-only">Close navigation</span></label>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Workspace sidebar">
+      <a class="brand" href="index.html" aria-label="Meridian home">
+        <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><g fill="currentColor"><path d="M14 1h4v10l7-7 3 3-7 7h10v4H21l7 7-3 3-7-7v10h-4V21l-7 7-3-3 7-7H1v-4h10L4 7l3-3 7 7z"/></g></svg>
+        meridian<span class="brand-dot">.</span>
+      </a>
+      <details class="workspace-switch">
+        <summary><span class="workspace-symbol">A</span><span><span class="workspace-name">Acme Studio</span><span class="workspace-plan">Pro workspace</span></span><svg class="icon chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="m8 9 4-4 4 4M8 15l4 4 4-4"/></svg></summary>
+        <p class="workspace-note">You’re viewing the Acme Studio demonstration workspace. All figures are sample business data.</p>
+      </details>
+      <p class="nav-label">Workspace</p>
+      <nav class="sidebar-nav" aria-label="Main navigation">
+        <a class="nav-link" href="index.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>Overview</a>
+        <a class="nav-link" href="analytics.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 3v17h17M8 15V9m5 6V5m5 10v-4"/></svg>Analytics</a>
+        <a class="nav-link" href="transactions.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 4h12m-4-3 4 3-4 3M16 20H4m4-3-4 3 4 3M4 9h16v6H4z"/></svg>Transactions<span class="nav-count">89</span></a>
+        <a class="nav-link" href="customers.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3"/><path d="M3 21v-3a6 6 0 0 1 12 0v3m1-16a3 3 0 0 1 0 6m3 10v-3a5 5 0 0 0-3-4"/></svg>Customers</a>
+      </nav>
+      <p class="nav-label">Manage</p>
+      <nav class="sidebar-nav" aria-label="Workspace management">
+        <a class="nav-link" href="settings.html" aria-current="page"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 3-.7 2-2 .8-2.1-.4-2 3.4L3.7 10v2l-1.5 1.3 2 3.4 2.1-.4 2 .8.7 2h4l.7-2 2-.8 2.1.4 2-3.4-1.5-1.3v-2l1.5-1.2-2-3.4-2.1.4-2-.8-.7-2z"/><circle cx="11" cy="11" r="3"/></svg>Settings</a>
+        <a class="nav-link" href="design-system.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 9 5-9 5-9-5 9-5Zm-9 9 9 5 9-5M3 16l9 5 9-5"/></svg>Design system<span class="nav-count">v1.0</span></a>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="plan-card"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.5 6 6.5 1-5 4.5 1.5 6.5-5.5-3.5L6.5 21 8 14.5 3 10l6.5-1z"/></svg><p class="plan-title">Room to grow.</p><p>A little more clarity.<br>A lot more possibility.</p><a href="settings.html#organization">Explore your workspace <span aria-hidden="true">↗</span></a></div>
+        <a class="nav-link" href="design-system.html#about"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 1 1 4 2c-1 .5-1.5 1-1.5 2M12 16h.01"/></svg>Help &amp; resources</a>
+        <div class="sidebar-footer"><span class="online-dot"></span>All systems operational <small>↗</small></div>
+      </div>
+    </aside>
+    <header class="app-header">
+      <div class="header-start">
+        <label class="mobile-menu" for="nav-toggle"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg><span class="sr-only">Toggle navigation</span></label>
+        <nav class="breadcrumb" aria-label="Breadcrumb"><a class="breadcrumb-workspace" href="index.html">Workspace</a><span class="separator" aria-hidden="true">/</span><span class="current" aria-current="page">Settings</span></nav>
+      </div>
+      <div class="header-actions">
+        <button class="search-shortcut" type="button" popovertarget="quick-nav"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4.5 4.5"/></svg>Quick navigation<kbd>↗</kbd></button>
+        <label class="theme-control" title="Switch appearance (this page only)"><input type="checkbox" id="theme-toggle" aria-label="Use dark appearance on this page"><svg class="icon theme-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.7 13A9 9 0 0 1 11 3.3 9 9 0 1 0 20.7 13Z"/></svg><svg class="icon theme-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg></label>
+        <button class="icon-button" type="button" popovertarget="notifications" aria-label="View sample notifications"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9M10 21h4"/></svg><span class="notification-dot"></span></button>
+        <span class="header-divider" aria-hidden="true"></span>
+        <details class="user-menu"><summary><span class="avatar">JL</span><span class="user-info"><span class="user-name">Jamie Lee</span><span class="user-role">Workspace admin</span></span><svg class="icon chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="m8 10 4 4 4-4"/></svg></summary><div class="dropdown-panel"><p>jamie@acme.studio</p><a href="settings.html#profile">Your profile <span class="push-end" aria-hidden="true">↗</span></a><a href="settings.html#appearance">Appearance <span class="push-end" aria-hidden="true">↗</span></a><a href="design-system.html#about">About this workspace</a></div></details>
+      </div>
+    </header>
+    <!-- PAGE CONTENT -->
+<main id="main-content" class="main-content" tabindex="-1">
+  <header class="page-heading">
+    <div>
+      <p class="eyebrow">YOUR WORKSPACE, YOUR WAY</p>
+      <h1 class="page-title">Settings</h1>
+      <p class="page-description">A little housekeeping. Make Meridian feel like home.</p>
+    </div>
+    <span class="badge badge-neutral">Workspace admin</span>
+  </header>
+
+  <div class="settings-layout">
+    <nav class="settings-nav" aria-label="Settings sections">
+      <a href="#profile">My profile <span>01</span></a>
+      <a href="#organization">Organization <span>02</span></a>
+      <a href="#appearance">Appearance <span>03</span></a>
+      <a href="#notification-preferences">Notifications <span>04</span></a>
+      <a href="#privacy">Privacy &amp; access <span>05</span></a>
+      <div class="settings-nav-note"><span class="settings-note-mark" aria-hidden="true">i</span><p>A static product demo.<br>Changes stay in this page until you leave or reset it.</p></div>
+    </nav>
+
+    <form class="settings-form" action="#settings-preview" method="get">
+      <section class="card settings-section" id="profile" aria-labelledby="profile-title">
+        <header class="card-header"><div><h2 class="card-title" id="profile-title">My profile</h2><p class="card-description">The person behind the great work.</p></div><span class="settings-section-number">01</span></header>
+        <div class="card-body">
+          <div class="settings-profile"><span class="avatar settings-profile-avatar" aria-label="Jamie Lee's initials">JL</span><div><strong>Jamie Lee</strong><p class="text-small text-muted">Workspace admin · Acme Studio</p><span class="badge badge-success">Verified email</span></div></div>
+          <div class="settings-fields">
+            <div class="field"><label for="first-name">First name <span aria-hidden="true">*</span></label><input class="input" id="first-name" autocomplete="given-name" value="Jamie" required maxlength="60"></div>
+            <div class="field"><label for="last-name">Last name <span aria-hidden="true">*</span></label><input class="input" id="last-name" autocomplete="family-name" value="Lee" required maxlength="60"></div>
+            <div class="field settings-full"><label for="profile-email">Email address <span aria-hidden="true">*</span></label><input class="input" id="profile-email" type="email" autocomplete="email" value="jamie@acme.studio" required aria-describedby="email-hint"><small id="email-hint">Your work email is used for account communication.</small></div>
+            <div class="field"><label for="job-title">Job title</label><input class="input" id="job-title" autocomplete="organization-title" value="Head of Operations" maxlength="100"></div>
+            <div class="field"><label for="timezone">Time zone</label><select class="select" id="timezone"><option selected>UTC−07:00 · Los Angeles</option><option>UTC+00:00 · London</option><option>UTC+03:00 · Cairo</option><option>UTC+08:00 · Singapore</option></select></div>
+            <div class="field settings-full"><label for="profile-bio">A short introduction</label><textarea class="input" id="profile-bio" rows="3" maxlength="240" aria-describedby="bio-hint">Helping good teams do their best work. Keeping an eye on the numbers along the way.</textarea><small id="bio-hint">Up to 240 characters. Visible to your workspace team in a connected product.</small></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="card settings-section" id="organization" aria-labelledby="organization-title">
+        <header class="card-header"><div><h2 class="card-title" id="organization-title">Organization</h2><p class="card-description">The details that bring your team together.</p></div><span class="settings-section-number">02</span></header>
+        <div class="card-body settings-fields">
+          <div class="field"><label for="organization-name">Organization name <span aria-hidden="true">*</span></label><input class="input" id="organization-name" autocomplete="organization" value="Acme Studio" required maxlength="100"></div>
+          <div class="field"><label for="organization-website">Website</label><input class="input" id="organization-website" type="url" value="https://acme.studio" placeholder="https://example.com"></div>
+          <div class="field"><label for="organization-industry">Industry</label><select class="select" id="organization-industry"><option selected>Design &amp; creative services</option><option>Software &amp; technology</option><option>Professional services</option><option>Retail &amp; commerce</option></select></div>
+          <div class="field"><label for="organization-size">Team size</label><select class="select" id="organization-size"><option>1–10 people</option><option selected>11–50 people</option><option>51–200 people</option><option>201+ people</option></select></div>
+          <div class="settings-full settings-plan"><div><span class="eyebrow">YOUR PLAN</span><h3>Built for your next chapter.</h3><p>Pro workspace · 24 of 30 team seats</p></div><span class="badge badge-success">Pro</span></div>
+        </div>
+      </section>
+
+      <section class="card settings-section" id="appearance" aria-labelledby="appearance-title">
+        <header class="card-header"><div><h2 class="card-title" id="appearance-title">Appearance</h2><p class="card-description">Find your focus, in light or dark.</p></div><span class="settings-section-number">03</span></header>
+        <div class="card-body">
+          <div class="settings-theme-pair" aria-label="Light and dark appearance previews">
+            <div class="settings-theme-sample settings-theme-light"><div class="settings-mini-sidebar"></div><div class="settings-mini-content"><span></span><div></div><div></div></div><strong>Light</strong></div>
+            <div class="settings-theme-sample settings-theme-dark"><div class="settings-mini-sidebar"></div><div class="settings-mini-content"><span></span><div></div><div></div></div><strong>Dark</strong></div>
+          </div>
+          <p class="settings-helper">Use the <strong>appearance switch</strong> in the application header to change this page’s theme. Theme selection resets when you open another page.</p>
+          <fieldset class="settings-density"><legend>Content density</legend><p class="text-small text-muted">Try the spacing in the preview below.</p><div class="settings-density-options"><label><input type="radio" id="density-comfortable" name="density" value="comfortable" checked> Comfortable</label><label><input type="radio" id="density-compact" name="density" value="compact"> Compact</label></div><div class="settings-density-preview"><span class="avatar">AS</span><div><strong>Acme Studio</strong><p>Room to do your best work.</p></div><span class="badge badge-success">Active</span></div></fieldset>
+        </div>
+      </section>
+
+      <section class="card settings-section" id="notification-preferences" aria-labelledby="notifications-title">
+        <header class="card-header"><div><h2 class="card-title" id="notifications-title">Notifications</h2><p class="card-description">Stay in the loop. Keep the noise down.</p></div><span class="settings-section-number">04</span></header>
+        <fieldset class="settings-preferences card-body"><legend class="settings-sr-only">Email notification preferences</legend>
+          <label class="settings-preference"><span><strong>Weekly performance digest</strong><small>Your revenue, customers, and progress, every Monday.</small></span><input class="settings-switch" type="checkbox" role="switch" checked></label>
+          <label class="settings-preference"><span><strong>Payment updates</strong><small>Successful payments, refunds, and failed transactions.</small></span><input class="settings-switch" type="checkbox" role="switch" checked></label>
+          <label class="settings-preference"><span><strong>New customer activity</strong><small>A welcome heads-up when a new account joins.</small></span><input class="settings-switch" type="checkbox" role="switch"></label>
+          <label class="settings-preference"><span><strong>Product news</strong><small>Thoughtful updates about what’s new in Meridian.</small></span><input class="settings-switch" type="checkbox" role="switch"></label>
+        </fieldset>
+      </section>
+
+      <section class="card settings-section" id="privacy" aria-labelledby="privacy-title">
+        <header class="card-header"><div><h2 class="card-title" id="privacy-title">Privacy &amp; access</h2><p class="card-description">A clear view of your workspace preferences.</p></div><span class="settings-section-number">05</span></header>
+        <div class="card-body">
+          <fieldset class="settings-privacy-options"><legend>Data preferences</legend><label><input type="checkbox" checked><span><strong>Show my profile to workspace members</strong><small>Make it easier for your team to find and contact you.</small></span></label><label><input type="checkbox"><span><strong>Share optional product usage insights</strong><small>Demonstration preference. This website sends no analytics.</small></span></label></fieldset>
+          <details class="settings-access-details"><summary>About access in this demonstration</summary><p>All records are fictional and publicly visible in the project files. Authentication, access restrictions, email delivery, and account security require a connected application and are not implemented here.</p></details>
+        </div>
+      </section>
+
+      <div class="settings-form-footer"><p><strong>Made for exploring.</strong><br>This form validates your entries without saving them. Required fields are marked *.</p><div class="cluster"><button class="button button-secondary" type="reset">Reset changes</button><button class="button button-primary" type="submit">Validate changes <span aria-hidden="true">↗</span></button></div></div>
+      <div id="settings-preview" class="settings-result alert" role="status"><strong>Your form passed the browser’s checks.</strong><p>This is a demonstration. Your profile entries have not been saved or submitted; the form has returned to its example values.</p><a href="#profile" class="section-link">Back to profile <span aria-hidden="true">↑</span></a></div>
+    </form>
+  </div>
+</main>
+
+    <!-- END PAGE CONTENT -->
+  </div>
+  <div id="quick-nav" popover><div class="popover-heading"><h2>Find your way</h2><button class="icon-button" type="button" popovertarget="quick-nav" popovertargetaction="hide" aria-label="Close navigation">×</button></div><nav class="quick-links" aria-label="Quick navigation"><a href="index.html">Business overview <span aria-hidden="true">↗</span></a><a href="analytics.html">Analytics &amp; insights <span aria-hidden="true">↗</span></a><a href="transactions.html">Transaction records <span aria-hidden="true">↗</span></a><a href="customers.html">Customer directory <span aria-hidden="true">↗</span></a><a href="settings.html">Workspace settings <span aria-hidden="true">↗</span></a></nav></div>
+  <div id="notifications" popover><div class="popover-heading"><h2>Workspace updates</h2><button class="icon-button" type="button" popovertarget="notifications" popovertargetaction="hide" aria-label="Close updates">×</button></div><p class="eyebrow">SAMPLE ACTIVITY · JUNE 30, 2026</p><div class="stack"><article class="alert"><span aria-hidden="true">↗</span><div><strong>Your June report is ready</strong><p>Revenue reached $128,430, up 13% from May.</p><a class="section-link" href="analytics.html">Explore the numbers ↗</a></div></article><article class="alert"><span aria-hidden="true">♧</span><div><strong>64 net new active customers</strong><p>Your active customer base is now 842.</p><a class="section-link" href="customers.html">View customer directory ↗</a></div></article><p class="popover-copy">A curated snapshot of this demonstration workspace. Updates are not retrieved live.</p></div></div>
+</body>
+</html>
